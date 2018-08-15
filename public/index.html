@@ -5,12 +5,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="/JS/main.js"></script>
+    <link href="CSS/default.css" rel="stylesheet" type="text/css">
     
-    <style>
+    <!--<style>
           body {
             font: 400 15px Lato, sans-serif;
             line-height: 1.8;
@@ -240,7 +243,7 @@
         .parallax {
             /* The image used */
             display: block;
-            background-image: url(Images/Header.png);
+            background-image: url(/Images/Header.png);
             /* Set a specific height */
             /*height: 75%;*/
             height: 750px;
@@ -257,7 +260,7 @@
         .parallax2 {
             /* The image used */
             display: block;
-            background-image: url(Images/Middle.png);
+            background-image: url(/Images/Middle.png);
             /* Set a specific height */
             height: 400px;
             opacity: 0.4;
@@ -273,7 +276,7 @@
         .parallax3 {
             /* The image used */
             display: block;
-            background-image: url(Images/bottom.png);
+            background-image: url(/Images/bottom.png);
             /* Set a specific height */
             height: 400px;
             opacity: 0.4;
@@ -336,7 +339,7 @@
             }
         }
 
-    </style>
+    </style>-->
 
 
 </head>
@@ -381,7 +384,7 @@
 
               <div class="carousel-inner" role="listbox">
                   <div class="item active">
-                      <img src="Images/horseHeader.png" width="100%">
+                      <img src="/Images/horseHeader.png" width="100%">
 
                   </div>
               </div>
@@ -399,21 +402,21 @@
             <div class="row text-center">
                 <div class="col-sm-4">
                     <div class="thumbnail slideanim">
-                        <img src="Images/bottom.png" alt="Paris" width="400" height="300">
+                        <img src="/Images/bottom.png" alt="Paris" width="400" height="300">
                         <p><strong>Paris</strong></p>
                         <p>Friday 27 November 2015</p>
                     </div>
                 </div>
                 <div class="col-sm-4">
                     <div class="thumbnail">
-                        <img src="Images/bottom.png" alt="New York" width="400" height="300">
+                        <img src="/Images/bottom.png" alt="New York" width="400" height="300">
                         <p><strong>New York</strong></p>
                         <p>Saturday 28 November 2015</p>
                     </div>
                 </div>
                 <div class="col-sm-4">
                     <div class="thumbnail">
-                        <img src="Images/bottom.png" alt="San Francisco" width="400" height="300">
+                        <img src="/Images/bottom.png" alt="San Francisco" width="400" height="300">
                         <p><strong>San Francisco</strong></p>
                         <p>Sunday 29 November 2015</p>
                     </div>
@@ -453,7 +456,7 @@
                 <div class="col-sm-8">
                     <p class="text-center"><strong>Name</strong></p><br>
                     <a href="#demo2" data-toggle="collapse">
-                        <img src="Images/Header.png" class="img-circle person slideanim" alt="Random Name" width="355" height="355">
+                        <img src="/Images/Header.png" class="img-circle person slideanim" alt="Random Name" width="355" height="355">
                     </a>
                     <div id="demo2" class="collapse">
                         <p>Drummer</p>
@@ -579,27 +582,23 @@
         <footer class="container-fluid text-center">
             <br />
             <div class="row">
-                <div class="col-sm-3">
-                    <span class="glyphicon glyphicon-envelope logo-small"></span>
-                    <h4>POWER</h4>
-                    <p>Lorem ipsum dolor sit amet..</p>
+               
+                <div class="col-sm-4">
+                    <!--<span class="fa fa-google" style="font-size:48px;color:#04518C"></span>
+                    <h4>Gmail</h4>-->
                 </div>
-                <div class="col-sm-3">
-                    <span class="glyphicon glyphicon-pencil logo-small"></span>
-                    <h4>LOVE</h4>
-                    <p>Lorem ipsum dolor sit amet..</p>
+                <div class="col-sm-4">
+                    <a href="https://www.instagram.com/trenttravels/" target="_blank"><span class="fa fa-instagram" style="font-size:48px;color:#04518C"></span></a>
+                    <h4>Instagram</h4>
+                    <!--<p>Lorem ipsum dolor sit amet..</p>-->
                 </div>
-                <div class="col-sm-3">
-                    <span class="glyphicon glyphicon-file logo-small"></span>
+                <div class="col-sm-4">
+                    <!--<span class="glyphicon glyphicon-sunglasses logo-small"></span>
                     <h4>JOB DONE</h4>
-                    <p>Lorem ipsum dolor sit amet..</p>
-                </div>
-                <div class="col-sm-3">
-                    <span class="glyphicon glyphicon-sunglasses logo-small"></span>
-                    <h4>JOB DONE</h4>
-                    <p>Lorem ipsum dolor sit amet..</p>
+                    <p>Lorem ipsum dolor sit amet..</p>-->
 
                 </div>
+               
             </div>
 
             <br /><br />
@@ -610,52 +609,6 @@
             </div>
             <br />
         </footer>
-
-        <script>
-            $(document).ready(function () {
-                // Add smooth scrolling to all links in navbar + footer link
-                $(".navbar a, footer a[href='#myPage']").on('click', function (event) {
-                    // Make sure this.hash has a value before overriding default behavior
-                    if (this.hash !== "") {
-                        // Prevent default anchor click behavior
-                        event.preventDefault();
-
-                        // Store hash
-                        var hash = this.hash;
-
-                        // Using jQuery's animate() method to add smooth page scroll
-                        // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
-                        $('html, body').animate({
-                            scrollTop: $(hash).offset().top
-                        }, 900, function () {
-
-                            // Add hash (#) to URL when done scrolling (default click behavior)
-                            window.location.hash = hash;
-                        });
-                    } // End if
-                });
-
-                $(window).scroll(function () {
-                    $(".slideanim").each(function () {
-                        var pos = $(this).offset().top;
-
-                        var winTop = $(window).scrollTop();
-                        if (pos < winTop + 600) {
-                            $(this).addClass("slide");
-                        }
-                    });
-
-                    if ($(this).scrollTop() > 640) { // Set position from top to add class
-                        $('.navbar').addClass("shrink");
-                    } else {
-                        $('.navbar').removeClass("shrink");
-                    }
-                });
-            })
-
-
-
-        </script>
 
 </body>
 </html>
