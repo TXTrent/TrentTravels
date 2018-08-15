@@ -89,12 +89,27 @@
             border-radius: 0;
         }
 
-            .thumbnail img {
+           .thumbnail img {
                 width: 100%;
                 height: 100%;
                 margin-bottom: 10px;
             }
 
+
+        .thumbnail2 {
+            padding: 0 0 15px 0;
+            border: none;
+            border-radius: 0;
+            background-color: #04518C;
+        }
+
+        .thumbnail2 img {
+                width: 100%;
+                height: 100%;
+                margin-bottom: 10px;
+            }
+
+         
         .carousel-control.right, .carousel-control.left {
             background-image: none;
             color: #F7F7F7;
